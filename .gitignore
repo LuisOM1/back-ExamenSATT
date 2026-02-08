@@ -1,0 +1,17 @@
+## Carpetas de compilación (Basura)
+bin/
+obj/
+publish/
+
+## Configuración de Visual Studio
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+
+## Archivos de base de datos locales
+*.mdf
+*.ldf
+
+## Otros
+.DS_Store

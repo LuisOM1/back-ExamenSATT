@@ -1,0 +1,1188 @@
+2026-01-17 18:44:15.970 -05:00 [INF] Iniciando la Web API...
+2026-01-17 18:44:16.686 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/swagger/index.html - null null
+2026-01-17 18:44:16.777 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-17 18:44:16.786 -05:00 [INF] Hosting environment: Development
+2026-01-17 18:44:16.786 -05:00 [INF] Content root path: C:\Users\LUIS\source\repos\PracticaSATT\PracticaSATT
+2026-01-17 18:44:17.707 -05:00 [INF] HTTP GET /swagger/index.html responded 200 in 129.7037 ms
+2026-01-17 18:44:17.714 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/swagger/index.html - 200 null text/html;charset=utf-8 1033.7536ms
+2026-01-17 18:44:17.731 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-17 18:44:17.737 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 4.8423ms
+2026-01-17 18:44:17.815 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/_vs/browserLink - null null
+2026-01-17 18:44:17.875 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/_vs/browserLink - 200 null text/javascript; charset=UTF-8 60.2076ms
+2026-01-17 18:44:18.292 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/swagger/v1/swagger.json - null null
+2026-01-17 18:44:18.498 -05:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 205.2130 ms
+2026-01-17 18:44:18.501 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 209.1803ms
+2026-01-17 18:44:35.721 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/Empleado - null null
+2026-01-17 18:44:35.731 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 18:44:35.798 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 18:44:36.346 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 18:44:37.403 -05:00 [WRN] No store type was specified for the decimal property 'suel_empl' on entity type 'EmpleadoModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-01-17 18:44:39.181 -05:00 [INF] Executed DbCommand (139ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 18:44:39.361 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 18:44:39.396 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 3590.4284ms
+2026-01-17 18:44:39.397 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 18:44:39.400 -05:00 [INF] HTTP GET /api/Empleado responded 200 in 3676.7086 ms
+2026-01-17 18:44:39.415 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/Empleado - 200 null application/json; charset=utf-8 3694.5603ms
+2026-01-17 18:47:47.568 -05:00 [INF] Request starting HTTP/1.1 POST http://localhost:48538/api/Empleado - application/json 150
+2026-01-17 18:47:47.570 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Create (ExamenSATT)'
+2026-01-17 18:47:47.595 -05:00 [INF] Route matched with {action = "Create", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ExamenSATT.DTOs.EmpleadoCreateUpdateDTO) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 18:47:47.839 -05:00 [INF] Iniciando registro de empleado: {"IdArea":2,"NombEmpl":"Augurio","ApeEmpl":"Obregon","EmaiEmpl":"aobregon@gmail.com","SuelEmpl":7000,"FechIngr":"2026-01-01T00:00:00.0000000","$type":"EmpleadoCreateUpdateDTO"}
+2026-01-17 18:47:48.059 -05:00 [INF] Executed DbCommand (111ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p5='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_REGI_EMPL @id_area=@p0, @nomb_empl=@p1, @ape_empl=@p2, @emai_empl=@p3, @suel_empl=@p4, @fech_ingr=@p5
+2026-01-17 18:47:48.067 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[ExamenSATT.DTOs.EmpleadoCreateUpdateDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-17 18:47:48.098 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Create (ExamenSATT) in 502.4565ms
+2026-01-17 18:47:48.098 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Create (ExamenSATT)'
+2026-01-17 18:47:48.099 -05:00 [INF] HTTP POST /api/Empleado responded 200 in 529.1686 ms
+2026-01-17 18:47:48.100 -05:00 [INF] Request finished HTTP/1.1 POST http://localhost:48538/api/Empleado - 200 null application/json; charset=utf-8 532.6897ms
+2026-01-17 18:48:08.376 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/Empleado - null null
+2026-01-17 18:48:08.377 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 18:48:08.377 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 18:48:08.385 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 18:48:08.539 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 18:48:08.542 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 18:48:08.543 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 165.5102ms
+2026-01-17 18:48:08.543 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 18:48:08.543 -05:00 [INF] HTTP GET /api/Empleado responded 200 in 166.8219 ms
+2026-01-17 18:48:08.544 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/Empleado - 200 null application/json; charset=utf-8 168.1364ms
+2026-01-17 18:48:25.461 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/Empleado/10 - null null
+2026-01-17 18:48:25.462 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.GetById (ExamenSATT)'
+2026-01-17 18:48:25.471 -05:00 [INF] Route matched with {action = "GetById", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 18:48:25.485 -05:00 [INF] Consultando empleado ID: 10 
+2026-01-17 18:48:25.510 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_EMPL @id_empl = @p0
+2026-01-17 18:48:25.516 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-17 18:48:25.519 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.GetById (ExamenSATT) in 47.4543ms
+2026-01-17 18:48:25.519 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.GetById (ExamenSATT)'
+2026-01-17 18:48:25.520 -05:00 [INF] HTTP GET /api/Empleado/10 responded 200 in 57.9738 ms
+2026-01-17 18:48:25.520 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/Empleado/10 - 200 null application/json; charset=utf-8 59.3545ms
+2026-01-17 18:55:00.375 -05:00 [INF] Request starting HTTP/1.1 PUT http://localhost:48538/api/Empleado/10 - application/json 151
+2026-01-17 18:55:00.376 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Update (ExamenSATT)'
+2026-01-17 18:55:00.386 -05:00 [INF] Route matched with {action = "Update", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, ExamenSATT.DTOs.EmpleadoCreateUpdateDTO) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 18:55:00.399 -05:00 [INF] Actualizando empleado ID: 10 con datos: {"IdArea":2,"NombEmpl":"Augurio","ApeEmpl":"Obregon","EmaiEmpl":"aobregon@gmail.com","SuelEmpl":14000,"FechIngr":"2026-01-01T00:00:00.0000000","$type":"EmpleadoCreateUpdateDTO"}
+2026-01-17 18:55:00.416 -05:00 [INF] Executed DbCommand (11ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_EDIT_EMPL @id_empl=@p0, @id_area=@p1, @nomb_empl=@p2, @ape_empl=@p3, @emai_empl=@p4, @suel_empl=@p5, @fech_ingr=@p6
+2026-01-17 18:55:00.418 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[ExamenSATT.DTOs.EmpleadoCreateUpdateDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-17 18:55:00.419 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Update (ExamenSATT) in 32.5323ms
+2026-01-17 18:55:00.419 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Update (ExamenSATT)'
+2026-01-17 18:55:00.419 -05:00 [INF] HTTP PUT /api/Empleado/10 responded 200 in 43.0207 ms
+2026-01-17 18:55:00.421 -05:00 [INF] Request finished HTTP/1.1 PUT http://localhost:48538/api/Empleado/10 - 200 null application/json; charset=utf-8 45.1299ms
+2026-01-17 18:55:18.717 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/Empleado - null null
+2026-01-17 18:55:18.718 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 18:55:18.718 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 18:55:18.719 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 18:55:18.725 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 18:55:18.727 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 18:55:18.727 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 9.2425ms
+2026-01-17 18:55:18.728 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 18:55:18.728 -05:00 [INF] HTTP GET /api/Empleado responded 200 in 10.0222 ms
+2026-01-17 18:55:18.728 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/Empleado - 200 null application/json; charset=utf-8 11.0378ms
+2026-01-17 18:55:33.511 -05:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:48538/api/Empleado/10 - null null
+2026-01-17 18:55:33.512 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Delete (ExamenSATT)'
+2026-01-17 18:55:33.521 -05:00 [INF] Route matched with {action = "Delete", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 18:55:33.529 -05:00 [WRN] Se solicitó eliminar/inactivar al empleado con ID: 10
+2026-01-17 18:55:33.546 -05:00 [INF] Executed DbCommand (14ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_ELIM_EMPL @id_empl=@p0
+2026-01-17 18:55:33.548 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 18:55:33.552 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Delete (ExamenSATT) in 30.4295ms
+2026-01-17 18:55:33.552 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Delete (ExamenSATT)'
+2026-01-17 18:55:33.552 -05:00 [INF] HTTP DELETE /api/Empleado/10 responded 200 in 40.0823 ms
+2026-01-17 18:55:33.553 -05:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:48538/api/Empleado/10 - 200 null application/json; charset=utf-8 41.3558ms
+2026-01-17 18:55:48.864 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/Empleado/10 - null null
+2026-01-17 18:55:48.865 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.GetById (ExamenSATT)'
+2026-01-17 18:55:48.865 -05:00 [INF] Route matched with {action = "GetById", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 18:55:48.867 -05:00 [INF] Consultando empleado ID: 10 
+2026-01-17 18:55:48.881 -05:00 [INF] Executed DbCommand (10ms) [Parameters=[p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_EMPL @id_empl = @p0
+2026-01-17 18:55:48.885 -05:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2026-01-17 18:55:48.952 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.GetById (ExamenSATT) in 87.0261ms
+2026-01-17 18:55:48.953 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.GetById (ExamenSATT)'
+2026-01-17 18:55:48.953 -05:00 [INF] HTTP GET /api/Empleado/10 responded 404 in 88.2274 ms
+2026-01-17 18:55:48.953 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/Empleado/10 - 404 null application/problem+json; charset=utf-8 89.5198ms
+2026-01-17 18:56:21.419 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/Empleado - null null
+2026-01-17 18:56:21.419 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 18:56:21.420 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 18:56:21.422 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 18:56:21.436 -05:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 18:56:21.438 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 18:56:21.439 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 18.4715ms
+2026-01-17 18:56:21.439 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 18:56:21.439 -05:00 [INF] HTTP GET /api/Empleado responded 200 in 19.9733 ms
+2026-01-17 18:56:21.440 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/Empleado - 200 null application/json; charset=utf-8 21.7842ms
+2026-01-17 20:12:48.890 -05:00 [INF] Iniciando la Web API...
+2026-01-17 20:12:49.461 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/swagger/index.html - null null
+2026-01-17 20:12:49.583 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-17 20:12:49.594 -05:00 [INF] Hosting environment: Development
+2026-01-17 20:12:49.595 -05:00 [INF] Content root path: C:\Users\LUIS\source\repos\PracticaSATT\PracticaSATT
+2026-01-17 20:12:55.440 -05:00 [INF] HTTP GET /swagger/index.html responded 200 in 449.6017 ms
+2026-01-17 20:12:55.468 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/swagger/index.html - 200 null text/html;charset=utf-8 6020.9521ms
+2026-01-17 20:12:55.484 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-17 20:12:55.506 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 21.2625ms
+2026-01-17 20:12:55.574 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/_vs/browserLink - null null
+2026-01-17 20:12:55.683 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/_vs/browserLink - 200 null text/javascript; charset=UTF-8 109.1928ms
+2026-01-17 20:12:55.890 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/swagger/v1/swagger.json - null null
+2026-01-17 20:12:56.137 -05:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 245.4471 ms
+2026-01-17 20:12:56.140 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 249.6518ms
+2026-01-17 20:21:58.906 -05:00 [INF] Iniciando la Web API...
+2026-01-17 20:21:59.480 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/swagger/index.html - null null
+2026-01-17 20:21:59.601 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-17 20:21:59.616 -05:00 [INF] Hosting environment: Development
+2026-01-17 20:21:59.616 -05:00 [INF] Content root path: C:\Users\LUIS\source\repos\PracticaSATT\PracticaSATT
+2026-01-17 20:22:00.492 -05:00 [INF] HTTP GET /swagger/index.html responded 200 in 180.3869 ms
+2026-01-17 20:22:00.512 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-17 20:22:00.511 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/swagger/index.html - 200 null text/html;charset=utf-8 1034.9407ms
+2026-01-17 20:22:00.519 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 5.8151ms
+2026-01-17 20:22:00.539 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/_vs/browserLink - null null
+2026-01-17 20:22:00.600 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/_vs/browserLink - 200 null text/javascript; charset=UTF-8 61.0339ms
+2026-01-17 20:22:00.759 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/swagger/v1/swagger.json - null null
+2026-01-17 20:22:00.990 -05:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 229.5240 ms
+2026-01-17 20:22:00.993 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 233.8553ms
+2026-01-17 20:22:04.277 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api//empleado - null null
+2026-01-17 20:22:04.292 -05:00 [INF] HTTP GET /api//empleado responded 404 in 8.2776 ms
+2026-01-17 20:22:04.296 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api//empleado - 404 null null 18.9277ms
+2026-01-17 20:22:04.301 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:48538/api//empleado, Response status code: 404
+2026-01-17 20:22:13.801 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api//empleado - null null
+2026-01-17 20:22:13.802 -05:00 [INF] HTTP GET /api//empleado responded 404 in 0.2141 ms
+2026-01-17 20:22:13.803 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api//empleado - 404 null null 1.2496ms
+2026-01-17 20:22:13.803 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:48538/api//empleado, Response status code: 404
+2026-01-17 20:22:18.883 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api//empleado - null null
+2026-01-17 20:22:18.884 -05:00 [INF] HTTP GET /api//empleado responded 404 in 0.1399 ms
+2026-01-17 20:22:18.885 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api//empleado - 404 null null 1.707ms
+2026-01-17 20:22:18.886 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:48538/api//empleado, Response status code: 404
+2026-01-17 20:22:22.381 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api//empleado - null null
+2026-01-17 20:22:22.382 -05:00 [INF] HTTP GET /api//empleado responded 404 in 0.1745 ms
+2026-01-17 20:22:22.382 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api//empleado - 404 null null 1.4751ms
+2026-01-17 20:22:22.383 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:48538/api//empleado, Response status code: 404
+2026-01-17 20:22:33.398 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538//empleado - null null
+2026-01-17 20:22:33.399 -05:00 [INF] HTTP GET //empleado responded 404 in 0.1250 ms
+2026-01-17 20:22:33.400 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538//empleado - 404 null null 1.5167ms
+2026-01-17 20:22:33.400 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:48538//empleado, Response status code: 404
+2026-01-17 20:22:36.659 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538//empleado - null null
+2026-01-17 20:22:36.659 -05:00 [INF] HTTP GET //empleado responded 404 in 0.0943 ms
+2026-01-17 20:22:36.660 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538//empleado - 404 null null 1.1767ms
+2026-01-17 20:22:36.661 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:48538//empleado, Response status code: 404
+2026-01-17 20:22:57.106 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/ - null null
+2026-01-17 20:22:57.111 -05:00 [INF] HTTP GET / responded 404 in 0.0753 ms
+2026-01-17 20:22:57.112 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/ - 404 null null 6.0943ms
+2026-01-17 20:22:57.112 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:48538/, Response status code: 404
+2026-01-17 20:22:59.641 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-17 20:22:59.645 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 4.1674ms
+2026-01-17 20:22:59.855 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/swagger/v1/swagger.json - null null
+2026-01-17 20:22:59.871 -05:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 14.9769 ms
+2026-01-17 20:22:59.871 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.7937ms
+2026-01-17 20:23:37.502 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/swagger/index.html/empleado - null null
+2026-01-17 20:23:37.503 -05:00 [INF] HTTP GET /swagger/index.html/empleado responded 404 in 0.4443 ms
+2026-01-17 20:23:37.504 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/swagger/index.html/empleado - 404 null null 2.3476ms
+2026-01-17 20:23:37.505 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:48538/swagger/index.html/empleado, Response status code: 404
+2026-01-17 20:23:41.745 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/swagger/index.html/empleado - null null
+2026-01-17 20:23:41.745 -05:00 [INF] HTTP GET /swagger/index.html/empleado responded 404 in 0.1257 ms
+2026-01-17 20:23:41.746 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/swagger/index.html/empleado - 404 null null 0.8659ms
+2026-01-17 20:23:41.746 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:48538/swagger/index.html/empleado, Response status code: 404
+2026-01-17 20:23:54.496 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/swagger//empleado - null null
+2026-01-17 20:23:54.497 -05:00 [INF] HTTP GET /swagger//empleado responded 404 in 0.1429 ms
+2026-01-17 20:23:54.498 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/swagger//empleado - 404 null null 1.5267ms
+2026-01-17 20:23:54.498 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:48538/swagger//empleado, Response status code: 404
+2026-01-17 20:23:59.788 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/swagger//empleado - null null
+2026-01-17 20:23:59.788 -05:00 [INF] HTTP GET /swagger//empleado responded 404 in 0.2482 ms
+2026-01-17 20:23:59.790 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/swagger//empleado - 404 null null 1.9222ms
+2026-01-17 20:23:59.790 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:48538/swagger//empleado, Response status code: 404
+2026-01-17 20:24:07.468 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/swagger/empleado - null null
+2026-01-17 20:24:07.469 -05:00 [INF] HTTP GET /swagger/empleado responded 404 in 0.0981 ms
+2026-01-17 20:24:07.470 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/swagger/empleado - 404 null null 0.8237ms
+2026-01-17 20:24:07.470 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:48538/swagger/empleado, Response status code: 404
+2026-01-17 20:24:09.424 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538//empleado - null null
+2026-01-17 20:24:09.425 -05:00 [INF] HTTP GET //empleado responded 404 in 0.1782 ms
+2026-01-17 20:24:09.426 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538//empleado - 404 null null 1.4723ms
+2026-01-17 20:24:09.426 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:48538//empleado, Response status code: 404
+2026-01-17 20:24:11.116 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538//empleado - null null
+2026-01-17 20:24:11.116 -05:00 [INF] HTTP GET //empleado responded 404 in 0.1634 ms
+2026-01-17 20:24:11.117 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538//empleado - 404 null null 1.0254ms
+2026-01-17 20:24:11.117 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:48538//empleado, Response status code: 404
+2026-01-17 20:24:21.553 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api//empleado - null null
+2026-01-17 20:24:21.553 -05:00 [INF] HTTP GET /api//empleado responded 404 in 0.0998 ms
+2026-01-17 20:24:21.554 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api//empleado - 404 null null 0.9421ms
+2026-01-17 20:24:21.554 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:48538/api//empleado, Response status code: 404
+2026-01-17 20:55:45.031 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api//empleado - null null
+2026-01-17 20:55:45.032 -05:00 [INF] HTTP GET /api//empleado responded 404 in 0.3201 ms
+2026-01-17 20:55:45.032 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api//empleado - 404 null null 1.8199ms
+2026-01-17 20:55:45.033 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:48538/api//empleado, Response status code: 404
+2026-01-17 20:56:49.413 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:48538/api//empleado/undefined - null null
+2026-01-17 20:56:49.413 -05:00 [INF] HTTP OPTIONS /api//empleado/undefined responded 404 in 0.1861 ms
+2026-01-17 20:56:49.415 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:48538/api//empleado/undefined - 404 null null 2.5257ms
+2026-01-17 20:56:49.416 -05:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: OPTIONS http://localhost:48538/api//empleado/undefined, Response status code: 404
+2026-01-17 20:57:23.847 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 20:57:23.853 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 20:57:23.884 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 20:57:24.103 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 20:57:24.502 -05:00 [WRN] No store type was specified for the decimal property 'suel_empl' on entity type 'EmpleadoModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-01-17 20:57:24.966 -05:00 [ERR] An error occurred using the connection to database 'RRHH' on server 'LAPTOP-C1FP64QV'.
+2026-01-17 20:57:25.012 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 1120.7386ms
+2026-01-17 20:57:25.014 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 20:57:25.017 -05:00 [ERR] Excepción no controlada en la ruta: /api/empleado
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.FromSqlQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ExamenSATT.Data.Repositories.EmpleadoRepository.GetAllEmpleadosAsync(CancellationToken ct) in C:\Users\LUIS\source\repos\PracticaSATT\PracticaSATT\Data\Repositories\EmpleadoRepository.cs:line 22
+   at ExamenSATT.Services.EmpleadoService.GetAllEmpleadosAsync(CancellationToken ct) in C:\Users\LUIS\source\repos\PracticaSATT\PracticaSATT\Services\EmpleadoService.cs:line 18
+   at ExamenSATT.Controllers.EmpleadoController.Get(CancellationToken ct) in C:\Users\LUIS\source\repos\PracticaSATT\PracticaSATT\Controllers\EmpleadoController.cs:line 20
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at ExamenSATT.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\LUIS\source\repos\PracticaSATT\PracticaSATT\Middleware\ExceptionMiddleware.cs:line 20
+2026-01-17 20:57:25.129 -05:00 [INF] HTTP GET /api/empleado responded 200 in 1281.4498 ms
+2026-01-17 20:57:25.144 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 499 null application/json; charset=utf-8 1296.9502ms
+2026-01-17 20:57:27.096 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 20:57:27.097 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 20:57:27.099 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 20:57:27.105 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 20:57:27.295 -05:00 [INF] Executed DbCommand (138ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 20:57:27.374 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 20:57:27.386 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 287.2565ms
+2026-01-17 20:57:27.387 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 20:57:27.387 -05:00 [INF] HTTP GET /api/empleado responded 200 in 289.9959 ms
+2026-01-17 20:57:27.387 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 291.6476ms
+2026-01-17 20:58:13.624 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/swagger/index.html - null null
+2026-01-17 20:58:13.668 -05:00 [INF] HTTP GET /swagger/index.html responded 200 in 0.9051 ms
+2026-01-17 20:58:13.668 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/swagger/index.html - 200 null text/html;charset=utf-8 43.7737ms
+2026-01-17 20:58:13.680 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-17 20:58:13.681 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 0.8323ms
+2026-01-17 20:58:13.723 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/_vs/browserLink - null null
+2026-01-17 20:58:13.733 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.7238ms
+2026-01-17 20:58:13.825 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/swagger/v1/swagger.json - null null
+2026-01-17 20:58:13.831 -05:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 6.2024 ms
+2026-01-17 20:58:13.832 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.6797ms
+2026-01-17 20:58:17.491 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 20:58:17.491 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 20:58:17.491 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 20:58:17.497 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 20:58:17.620 -05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 20:58:17.626 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 20:58:17.627 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 135.7894ms
+2026-01-17 20:58:17.627 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 20:58:17.627 -05:00 [INF] HTTP GET /api/empleado responded 200 in 136.4713 ms
+2026-01-17 20:58:17.628 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 136.9282ms
+2026-01-17 20:58:18.916 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 20:58:18.917 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 20:58:18.917 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 20:58:18.918 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 20:58:18.926 -05:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 20:58:18.928 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 20:58:18.928 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 11.16ms
+2026-01-17 20:58:18.928 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 20:58:18.929 -05:00 [INF] HTTP GET /api/empleado responded 200 in 12.1017 ms
+2026-01-17 20:58:18.929 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 12.7877ms
+2026-01-17 20:58:20.111 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 20:58:20.112 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 20:58:20.112 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 20:58:20.112 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 20:58:20.116 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 20:58:20.117 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 20:58:20.119 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 7.1677ms
+2026-01-17 20:58:20.120 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 20:58:20.120 -05:00 [INF] HTTP GET /api/empleado responded 200 in 8.6503 ms
+2026-01-17 20:58:20.121 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 9.7352ms
+2026-01-17 21:02:06.588 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:02:06.588 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:02:06.589 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:02:06.589 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:02:06.601 -05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:02:06.605 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:02:06.606 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 16.8991ms
+2026-01-17 21:02:06.606 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:02:06.606 -05:00 [INF] HTTP GET /api/empleado responded 200 in 17.5083 ms
+2026-01-17 21:02:06.606 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 18.3604ms
+2026-01-17 21:02:07.503 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:02:07.504 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:02:07.504 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:02:07.505 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:02:07.619 -05:00 [INF] Executed DbCommand (112ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:02:07.620 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:02:07.620 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 116.4263ms
+2026-01-17 21:02:07.621 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:02:07.621 -05:00 [INF] HTTP GET /api/empleado responded 200 in 118.3605 ms
+2026-01-17 21:02:07.622 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 118.9769ms
+2026-01-17 21:02:09.460 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:02:09.461 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:02:09.461 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:02:09.462 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:02:09.467 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:02:09.468 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:02:09.468 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 7.0027ms
+2026-01-17 21:02:09.468 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:02:09.468 -05:00 [INF] HTTP GET /api/empleado responded 200 in 7.5394 ms
+2026-01-17 21:02:09.469 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 8.218ms
+2026-01-17 21:02:12.547 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:02:12.548 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:02:12.548 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:02:12.549 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:02:12.570 -05:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:02:12.571 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:02:12.572 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 23.4041ms
+2026-01-17 21:02:12.572 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:02:12.572 -05:00 [INF] HTTP GET /api/empleado responded 200 in 24.3348 ms
+2026-01-17 21:02:12.572 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 24.8429ms
+2026-01-17 21:09:39.707 -05:00 [INF] Iniciando la Web API...
+2026-01-17 21:09:40.233 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:09:40.276 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:09:40.292 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:09:40.300 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-17 21:09:40.301 -05:00 [INF] Hosting environment: Development
+2026-01-17 21:09:40.301 -05:00 [INF] Content root path: C:\Users\LUIS\source\repos\PracticaSATT\PracticaSATT
+2026-01-17 21:09:40.319 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:09:40.562 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:09:40.948 -05:00 [WRN] No store type was specified for the decimal property 'suel_empl' on entity type 'EmpleadoModel'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-01-17 21:09:42.091 -05:00 [INF] Executed DbCommand (186ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:09:42.144 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:09:42.177 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 1855.5185ms
+2026-01-17 21:09:42.178 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:09:42.180 -05:00 [INF] HTTP GET /api/empleado responded 200 in 1913.1499 ms
+2026-01-17 21:09:42.188 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 1960.0446ms
+2026-01-17 21:10:19.565 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/swagger/index.html - null null
+2026-01-17 21:10:19.725 -05:00 [INF] HTTP GET /swagger/index.html responded 200 in 83.1918 ms
+2026-01-17 21:10:19.726 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/swagger/index.html - 200 null text/html;charset=utf-8 161.4739ms
+2026-01-17 21:10:19.732 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-17 21:10:19.732 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/_vs/browserLink - null null
+2026-01-17 21:10:19.735 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 2.3339ms
+2026-01-17 21:10:19.757 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/_vs/browserLink - 200 null text/javascript; charset=UTF-8 25.4131ms
+2026-01-17 21:10:20.010 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/swagger/v1/swagger.json - null null
+2026-01-17 21:10:20.117 -05:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 105.3895 ms
+2026-01-17 21:10:20.118 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 108.052ms
+2026-01-17 21:12:00.560 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:12:00.561 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:12:00.562 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:12:00.563 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:12:00.566 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:12:00.600 -05:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:12:00.602 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:12:00.604 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 41.4228ms
+2026-01-17 21:12:00.605 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:12:00.605 -05:00 [INF] HTTP GET /api/empleado responded 200 in 44.1913 ms
+2026-01-17 21:12:00.606 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 45.4973ms
+2026-01-17 21:12:05.466 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:12:05.467 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:12:05.467 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:12:05.468 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:12:05.476 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:12:05.571 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:12:05.572 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:12:05.572 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 104.2344ms
+2026-01-17 21:12:05.572 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:12:05.573 -05:00 [INF] HTTP GET /api/empleado responded 200 in 105.8046 ms
+2026-01-17 21:12:05.573 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 106.934ms
+2026-01-17 21:12:19.670 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:12:19.670 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:12:19.671 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:12:19.671 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:12:19.671 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:12:19.677 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:12:19.677 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:12:19.678 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 7.0324ms
+2026-01-17 21:12:19.678 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:12:19.678 -05:00 [INF] HTTP GET /api/empleado responded 200 in 7.8181 ms
+2026-01-17 21:12:19.679 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 8.6939ms
+2026-01-17 21:19:29.938 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/Empleado - null null
+2026-01-17 21:19:29.941 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:19:29.941 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:19:29.943 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:19:31.721 -05:00 [INF] Executed DbCommand (177ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:19:31.725 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:19:31.727 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 1785.1779ms
+2026-01-17 21:19:31.727 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:19:31.727 -05:00 [INF] HTTP GET /api/Empleado responded 200 in 1787.6188 ms
+2026-01-17 21:19:31.729 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/Empleado - 200 null application/json; charset=utf-8 1790.2597ms
+2026-01-17 21:20:53.734 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:20:53.737 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:20:53.739 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:20:53.741 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:20:53.742 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:20:53.750 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:20:53.752 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:20:53.754 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 11.915ms
+2026-01-17 21:20:53.754 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:20:53.755 -05:00 [INF] HTTP GET /api/empleado responded 200 in 18.3507 ms
+2026-01-17 21:20:53.755 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 21.1269ms
+2026-01-17 21:20:55.655 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:20:55.655 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:20:55.656 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:20:55.656 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:20:55.658 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:20:55.669 -05:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:20:55.670 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:20:55.671 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 14.5228ms
+2026-01-17 21:20:55.671 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:20:55.672 -05:00 [INF] HTTP GET /api/empleado responded 200 in 16.5622 ms
+2026-01-17 21:20:55.673 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 17.8479ms
+2026-01-17 21:20:59.540 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:20:59.541 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:20:59.541 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:20:59.541 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:20:59.543 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:20:59.553 -05:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:20:59.554 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:20:59.555 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 13.7268ms
+2026-01-17 21:20:59.555 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:20:59.556 -05:00 [INF] HTTP GET /api/empleado responded 200 in 14.9119 ms
+2026-01-17 21:20:59.556 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 16.0238ms
+2026-01-17 21:21:13.580 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:21:13.581 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:21:13.582 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:21:13.582 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:21:13.584 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:21:13.600 -05:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:21:13.601 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:21:13.603 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 19.8065ms
+2026-01-17 21:21:13.603 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:21:13.603 -05:00 [INF] HTTP GET /api/empleado responded 200 in 22.2376 ms
+2026-01-17 21:21:13.604 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 23.8818ms
+2026-01-17 21:21:15.498 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:21:15.499 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:21:15.499 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:21:15.499 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:21:15.500 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:21:15.507 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:21:15.508 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:21:15.509 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 9.3291ms
+2026-01-17 21:21:15.509 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:21:15.509 -05:00 [INF] HTTP GET /api/empleado responded 200 in 10.2097 ms
+2026-01-17 21:21:15.509 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 10.8515ms
+2026-01-17 21:21:46.603 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:21:46.603 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:21:46.604 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:21:46.605 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:21:46.606 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:21:46.621 -05:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:21:46.622 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:21:46.623 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 17.6448ms
+2026-01-17 21:21:46.623 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:21:46.624 -05:00 [INF] HTTP GET /api/empleado responded 200 in 20.2029 ms
+2026-01-17 21:21:46.624 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 21.185ms
+2026-01-17 21:22:17.486 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:22:17.487 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:22:17.487 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:22:17.487 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:22:17.488 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:22:17.495 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:22:17.496 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:22:17.497 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 9.4488ms
+2026-01-17 21:22:17.497 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:22:17.497 -05:00 [INF] HTTP GET /api/empleado responded 200 in 10.5068 ms
+2026-01-17 21:22:17.498 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 11.4478ms
+2026-01-17 21:22:18.579 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:22:18.580 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:22:18.580 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:22:18.580 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:22:18.583 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:22:18.593 -05:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:22:18.595 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:22:18.596 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 15.2564ms
+2026-01-17 21:22:18.596 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:22:18.596 -05:00 [INF] HTTP GET /api/empleado responded 200 in 16.6135 ms
+2026-01-17 21:22:18.598 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 18.3483ms
+2026-01-17 21:22:21.539 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:22:21.539 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:22:21.539 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:22:21.540 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:22:21.542 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:22:21.557 -05:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:22:21.558 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:22:21.559 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 18.6186ms
+2026-01-17 21:22:21.560 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:22:21.560 -05:00 [INF] HTTP GET /api/empleado responded 200 in 20.8516 ms
+2026-01-17 21:22:21.560 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 21.7636ms
+2026-01-17 21:22:28.487 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:22:28.487 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:22:28.488 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:22:28.488 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:22:28.489 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:22:28.498 -05:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:22:28.499 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:22:28.500 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 11.4738ms
+2026-01-17 21:22:28.500 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:22:28.500 -05:00 [INF] HTTP GET /api/empleado responded 200 in 13.0155 ms
+2026-01-17 21:22:28.501 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 14.1735ms
+2026-01-17 21:22:29.523 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:22:29.523 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:22:29.523 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:22:29.524 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:22:29.524 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:22:29.534 -05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:22:29.535 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:22:29.535 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 11.669ms
+2026-01-17 21:22:29.536 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:22:29.536 -05:00 [INF] HTTP GET /api/empleado responded 200 in 13.0251 ms
+2026-01-17 21:22:29.537 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 14.296ms
+2026-01-17 21:22:32.448 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:22:32.449 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:22:32.450 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:22:32.450 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:22:32.454 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:22:32.460 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:22:32.461 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:22:32.462 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 9.3679ms
+2026-01-17 21:22:32.462 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:22:32.462 -05:00 [INF] HTTP GET /api/empleado responded 200 in 13.3939 ms
+2026-01-17 21:22:32.462 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 14.183ms
+2026-01-17 21:22:49.786 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:22:49.786 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:22:49.787 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:22:49.788 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:22:49.789 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:22:49.794 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:22:49.795 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:22:49.797 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 8.5776ms
+2026-01-17 21:22:49.797 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:22:49.797 -05:00 [INF] HTTP GET /api/empleado responded 200 in 10.4286 ms
+2026-01-17 21:22:49.798 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 12.097ms
+2026-01-17 21:22:54.570 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:22:54.571 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:22:54.571 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:22:54.572 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:22:54.573 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:22:54.580 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:22:54.581 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:22:54.583 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 10.7009ms
+2026-01-17 21:22:54.583 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:22:54.583 -05:00 [INF] HTTP GET /api/empleado responded 200 in 12.0988 ms
+2026-01-17 21:22:54.583 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 12.81ms
+2026-01-17 21:23:12.535 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:23:12.535 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:23:12.536 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:23:12.536 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:23:12.537 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:23:12.726 -05:00 [INF] Executed DbCommand (186ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:23:12.727 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:23:12.728 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 191.7033ms
+2026-01-17 21:23:12.728 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:23:12.728 -05:00 [INF] HTTP GET /api/empleado responded 200 in 192.9627 ms
+2026-01-17 21:23:12.729 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 193.8222ms
+2026-01-17 21:23:16.477 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:23:16.478 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:23:16.478 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:23:16.479 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:23:16.480 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:23:16.492 -05:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:23:16.493 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:23:16.494 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 15.0585ms
+2026-01-17 21:23:16.494 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:23:16.494 -05:00 [INF] HTTP GET /api/empleado responded 200 in 16.7270 ms
+2026-01-17 21:23:16.495 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 17.4278ms
+2026-01-17 21:23:37.523 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:23:37.523 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:23:37.524 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:23:37.524 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:23:37.525 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:23:37.537 -05:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:23:37.539 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:23:37.540 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 15.0616ms
+2026-01-17 21:23:37.540 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:23:37.540 -05:00 [INF] HTTP GET /api/empleado responded 200 in 16.9757 ms
+2026-01-17 21:23:37.540 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 17.8343ms
+2026-01-17 21:23:42.580 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:23:42.580 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:23:42.580 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:23:42.580 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:23:42.583 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:23:42.597 -05:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:23:42.598 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:23:42.599 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 18.1479ms
+2026-01-17 21:23:42.599 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:23:42.599 -05:00 [INF] HTTP GET /api/empleado responded 200 in 19.0143 ms
+2026-01-17 21:23:42.599 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 19.8041ms
+2026-01-17 21:23:44.472 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:23:44.473 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:23:44.473 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:23:44.474 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:23:44.475 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:23:44.485 -05:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:23:44.486 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:23:44.487 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 12.8624ms
+2026-01-17 21:23:44.487 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:23:44.487 -05:00 [INF] HTTP GET /api/empleado responded 200 in 14.1301 ms
+2026-01-17 21:23:44.487 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 14.8313ms
+2026-01-17 21:23:46.496 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:23:46.496 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:23:46.497 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:23:46.497 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:23:46.498 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:23:46.506 -05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:23:46.507 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:23:46.508 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 10.3427ms
+2026-01-17 21:23:46.508 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:23:46.508 -05:00 [INF] HTTP GET /api/empleado responded 200 in 11.4183 ms
+2026-01-17 21:23:46.508 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 12.2318ms
+2026-01-17 21:23:58.641 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:23:58.641 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:23:58.641 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:23:58.641 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:23:58.642 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:23:58.651 -05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:23:58.652 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:23:58.654 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 12.4864ms
+2026-01-17 21:23:58.654 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:23:58.655 -05:00 [INF] HTTP GET /api/empleado responded 200 in 13.5875 ms
+2026-01-17 21:23:58.655 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 14.6106ms
+2026-01-17 21:24:01.563 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:24:01.563 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:24:01.564 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:24:01.565 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:24:01.566 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:24:01.581 -05:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:24:01.584 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:24:01.585 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 20.5853ms
+2026-01-17 21:24:01.585 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:24:01.586 -05:00 [INF] HTTP GET /api/empleado responded 200 in 22.2530 ms
+2026-01-17 21:24:01.586 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 23.1131ms
+2026-01-17 21:24:12.488 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:24:12.488 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:24:12.489 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:24:12.489 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:24:12.489 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:24:12.504 -05:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:24:12.505 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:24:12.507 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 17.6471ms
+2026-01-17 21:24:12.507 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:24:12.507 -05:00 [INF] HTTP GET /api/empleado responded 200 in 18.8130 ms
+2026-01-17 21:24:12.508 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 19.6029ms
+2026-01-17 21:25:19.403 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:48538/api/empleado/undefined - null null
+2026-01-17 21:25:19.404 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:25:19.408 -05:00 [INF] HTTP OPTIONS /api/empleado/undefined responded 204 in 4.2372 ms
+2026-01-17 21:25:19.409 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:48538/api/empleado/undefined - 204 null null 6.2097ms
+2026-01-17 21:25:19.413 -05:00 [INF] Request starting HTTP/1.1 PUT http://localhost:48538/api/empleado/undefined - application/json 135
+2026-01-17 21:25:19.413 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:25:19.414 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Update (ExamenSATT)'
+2026-01-17 21:25:19.432 -05:00 [INF] Route matched with {action = "Update", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, ExamenSATT.DTOs.EmpleadoCreateUpdateDTO) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:25:19.524 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-01-17 21:25:19.578 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Update (ExamenSATT) in 145.6388ms
+2026-01-17 21:25:19.578 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Update (ExamenSATT)'
+2026-01-17 21:25:19.578 -05:00 [INF] HTTP PUT /api/empleado/undefined responded 400 in 165.0176 ms
+2026-01-17 21:25:19.579 -05:00 [INF] Request finished HTTP/1.1 PUT http://localhost:48538/api/empleado/undefined - 400 null application/problem+json; charset=utf-8 165.7871ms
+2026-01-17 21:25:52.628 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:48538/api/empleado/undefined - null null
+2026-01-17 21:25:52.629 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:25:52.629 -05:00 [INF] HTTP OPTIONS /api/empleado/undefined responded 204 in 0.4210 ms
+2026-01-17 21:25:52.629 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:48538/api/empleado/undefined - 204 null null 1.1912ms
+2026-01-17 21:25:52.631 -05:00 [INF] Request starting HTTP/1.1 PUT http://localhost:48538/api/empleado/undefined - application/json 135
+2026-01-17 21:25:52.632 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:25:52.632 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Update (ExamenSATT)'
+2026-01-17 21:25:52.632 -05:00 [INF] Route matched with {action = "Update", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, ExamenSATT.DTOs.EmpleadoCreateUpdateDTO) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:25:52.636 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-01-17 21:25:52.637 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Update (ExamenSATT) in 4.9159ms
+2026-01-17 21:25:52.637 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Update (ExamenSATT)'
+2026-01-17 21:25:52.637 -05:00 [INF] HTTP PUT /api/empleado/undefined responded 400 in 5.6811 ms
+2026-01-17 21:25:52.638 -05:00 [INF] Request finished HTTP/1.1 PUT http://localhost:48538/api/empleado/undefined - 400 null application/problem+json; charset=utf-8 6.2947ms
+2026-01-17 21:26:16.497 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:26:16.498 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:26:16.499 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:26:16.500 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:26:16.500 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:26:16.508 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:26:16.509 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:26:16.509 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 9.4437ms
+2026-01-17 21:26:16.509 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:26:16.509 -05:00 [INF] HTTP GET /api/empleado responded 200 in 11.3722 ms
+2026-01-17 21:26:16.510 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 12.3233ms
+2026-01-17 21:26:23.186 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:26:23.187 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:26:23.187 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:26:23.187 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:26:23.188 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:26:23.196 -05:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:26:23.196 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:26:23.198 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 10.6054ms
+2026-01-17 21:26:23.198 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:26:23.198 -05:00 [INF] HTTP GET /api/empleado responded 200 in 11.8213 ms
+2026-01-17 21:26:23.199 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 12.6331ms
+2026-01-17 21:27:18.695 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:48538/api/empleado/7 - null null
+2026-01-17 21:27:18.695 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:27:18.695 -05:00 [INF] HTTP OPTIONS /api/empleado/7 responded 204 in 0.2613 ms
+2026-01-17 21:27:18.696 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:48538/api/empleado/7 - 204 null null 1.3051ms
+2026-01-17 21:27:18.701 -05:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:48538/api/empleado/7 - null null
+2026-01-17 21:27:18.701 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:27:18.701 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Delete (ExamenSATT)'
+2026-01-17 21:27:18.727 -05:00 [INF] Route matched with {action = "Delete", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:27:18.742 -05:00 [WRN] Se solicitó eliminar/inactivar al empleado con ID: 7
+2026-01-17 21:27:18.884 -05:00 [INF] Executed DbCommand (93ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_ELIM_EMPL @id_empl=@p0
+2026-01-17 21:27:18.890 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:27:18.894 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Delete (ExamenSATT) in 166.7511ms
+2026-01-17 21:27:18.894 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Delete (ExamenSATT)'
+2026-01-17 21:27:18.894 -05:00 [INF] HTTP DELETE /api/empleado/7 responded 200 in 193.1625 ms
+2026-01-17 21:27:18.894 -05:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:48538/api/empleado/7 - 200 null application/json; charset=utf-8 193.7966ms
+2026-01-17 21:27:18.905 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:27:18.906 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:27:18.907 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:27:18.907 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:27:18.908 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:27:18.918 -05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:27:18.919 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:27:18.920 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 12.7268ms
+2026-01-17 21:27:18.920 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:27:18.920 -05:00 [INF] HTTP GET /api/empleado responded 200 in 14.8203 ms
+2026-01-17 21:27:18.921 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 15.9532ms
+2026-01-17 21:27:29.878 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:48538/api/empleado/6 - null null
+2026-01-17 21:27:29.878 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:27:29.878 -05:00 [INF] HTTP OPTIONS /api/empleado/6 responded 204 in 0.3115 ms
+2026-01-17 21:27:29.879 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:48538/api/empleado/6 - 204 null null 1.3532ms
+2026-01-17 21:27:29.886 -05:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:48538/api/empleado/6 - null null
+2026-01-17 21:27:29.887 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:27:29.887 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Delete (ExamenSATT)'
+2026-01-17 21:27:29.887 -05:00 [INF] Route matched with {action = "Delete", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:27:29.889 -05:00 [WRN] Se solicitó eliminar/inactivar al empleado con ID: 6
+2026-01-17 21:27:29.906 -05:00 [INF] Executed DbCommand (12ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_ELIM_EMPL @id_empl=@p0
+2026-01-17 21:27:29.907 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:27:29.908 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Delete (ExamenSATT) in 20.6129ms
+2026-01-17 21:27:29.908 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Delete (ExamenSATT)'
+2026-01-17 21:27:29.908 -05:00 [INF] HTTP DELETE /api/empleado/6 responded 200 in 21.8119 ms
+2026-01-17 21:27:29.909 -05:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:48538/api/empleado/6 - 200 null application/json; charset=utf-8 23.2893ms
+2026-01-17 21:27:29.917 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:27:29.917 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:27:29.918 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:27:29.918 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:27:29.918 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:27:29.930 -05:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:27:29.931 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:27:29.932 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 13.981ms
+2026-01-17 21:27:29.932 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:27:29.932 -05:00 [INF] HTTP GET /api/empleado responded 200 in 14.8191 ms
+2026-01-17 21:27:29.933 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 15.7394ms
+2026-01-17 21:27:33.130 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:27:33.130 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:27:33.130 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:27:33.130 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:27:33.131 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:27:33.132 -05:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:27:33.133 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:27:33.133 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 3.0977ms
+2026-01-17 21:27:33.133 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:27:33.133 -05:00 [INF] HTTP GET /api/empleado responded 200 in 3.4480 ms
+2026-01-17 21:27:33.134 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 3.8383ms
+2026-01-17 21:27:53.466 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:27:53.466 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:27:53.467 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:27:53.467 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:27:53.468 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:27:53.554 -05:00 [INF] Executed DbCommand (85ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:27:53.555 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:27:53.556 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 88.327ms
+2026-01-17 21:27:53.556 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:27:53.556 -05:00 [INF] HTTP GET /api/empleado responded 200 in 89.9497 ms
+2026-01-17 21:27:53.557 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 90.7319ms
+2026-01-17 21:28:04.036 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:28:04.037 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:28:04.037 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:28:04.037 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:28:04.039 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:28:04.055 -05:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:28:04.056 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:28:04.058 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 20.0444ms
+2026-01-17 21:28:04.058 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:28:04.058 -05:00 [INF] HTTP GET /api/empleado responded 200 in 21.6871 ms
+2026-01-17 21:28:04.059 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 22.9062ms
+2026-01-17 21:28:12.831 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:28:12.831 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:28:12.832 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:28:12.832 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:28:12.833 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:28:12.838 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:28:12.838 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:28:12.840 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 7.7195ms
+2026-01-17 21:28:12.840 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:28:12.840 -05:00 [INF] HTTP GET /api/empleado responded 200 in 8.7230 ms
+2026-01-17 21:28:12.841 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 9.6944ms
+2026-01-17 21:31:34.670 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:31:34.671 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:31:34.671 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:31:34.672 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:31:34.674 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:31:34.690 -05:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:31:34.691 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:31:34.692 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 20.6877ms
+2026-01-17 21:31:34.693 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:31:34.693 -05:00 [INF] HTTP GET /api/empleado responded 200 in 22.2523 ms
+2026-01-17 21:31:34.693 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 23.6342ms
+2026-01-17 21:31:40.526 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:31:40.527 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:31:40.527 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:31:40.527 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:31:40.529 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:31:40.533 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:31:40.534 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:31:40.535 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 8.0013ms
+2026-01-17 21:31:40.535 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:31:40.536 -05:00 [INF] HTTP GET /api/empleado responded 200 in 9.0999 ms
+2026-01-17 21:31:40.537 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 10.2583ms
+2026-01-17 21:31:45.981 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:31:45.982 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:31:45.982 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:31:45.982 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:31:45.983 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:31:45.988 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:31:45.989 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:31:45.990 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 7.7471ms
+2026-01-17 21:31:45.991 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:31:45.991 -05:00 [INF] HTTP GET /api/empleado responded 200 in 8.9956 ms
+2026-01-17 21:31:45.992 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 10.0811ms
+2026-01-17 21:37:51.760 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:37:51.761 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:37:51.762 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:37:51.762 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:37:51.764 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:37:52.559 -05:00 [INF] Executed DbCommand (203ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:37:52.560 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:37:52.561 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 798.1671ms
+2026-01-17 21:37:52.561 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:37:52.561 -05:00 [INF] HTTP GET /api/empleado responded 200 in 799.6954 ms
+2026-01-17 21:37:52.561 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 800.7755ms
+2026-01-17 21:43:04.217 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:43:04.217 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:43:04.217 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:43:04.218 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:43:04.219 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:43:04.227 -05:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:43:04.228 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:43:04.229 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 10.723ms
+2026-01-17 21:43:04.229 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:43:04.229 -05:00 [INF] HTTP GET /api/empleado responded 200 in 12.0092 ms
+2026-01-17 21:43:04.229 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 12.6886ms
+2026-01-17 21:43:04.904 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:43:04.904 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:43:04.904 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:43:04.904 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:43:04.905 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:43:04.914 -05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:43:04.915 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:43:04.916 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 11.4862ms
+2026-01-17 21:43:04.916 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:43:04.916 -05:00 [INF] HTTP GET /api/empleado responded 200 in 12.3127 ms
+2026-01-17 21:43:04.917 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 12.9049ms
+2026-01-17 21:43:28.513 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:43:28.514 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:43:28.515 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:43:28.515 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:43:28.517 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:43:28.538 -05:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:43:28.538 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:43:28.539 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 24.0977ms
+2026-01-17 21:43:28.540 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:43:28.540 -05:00 [INF] HTTP GET /api/empleado responded 200 in 25.9224 ms
+2026-01-17 21:43:28.541 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 28.1039ms
+2026-01-17 21:44:13.277 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:44:13.277 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:44:13.277 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:44:13.277 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:44:13.278 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:44:14.027 -05:00 [INF] Executed DbCommand (745ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:44:14.028 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:44:14.029 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 751.3338ms
+2026-01-17 21:44:14.029 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:44:14.029 -05:00 [INF] HTTP GET /api/empleado responded 200 in 752.4896 ms
+2026-01-17 21:44:14.030 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 753.3637ms
+2026-01-17 21:44:21.485 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:44:21.485 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:44:21.485 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:44:21.485 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:44:21.486 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:44:21.498 -05:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:44:21.499 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:44:21.499 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 14.0511ms
+2026-01-17 21:44:21.500 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:44:21.500 -05:00 [INF] HTTP GET /api/empleado responded 200 in 14.8920 ms
+2026-01-17 21:44:21.500 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 15.4041ms
+2026-01-17 21:44:22.516 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:44:22.516 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:44:22.516 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:44:22.516 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:44:22.517 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:44:22.787 -05:00 [INF] Executed DbCommand (269ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:44:22.788 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:44:22.790 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 273.3585ms
+2026-01-17 21:44:22.790 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:44:22.790 -05:00 [INF] HTTP GET /api/empleado responded 200 in 274.3121 ms
+2026-01-17 21:44:22.791 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 275.424ms
+2026-01-17 21:44:23.552 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:44:23.552 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:44:23.552 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:44:23.552 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:44:23.553 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:44:23.573 -05:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:44:23.574 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:44:23.575 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 22.386ms
+2026-01-17 21:44:23.575 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:44:23.575 -05:00 [INF] HTTP GET /api/empleado responded 200 in 23.4256 ms
+2026-01-17 21:44:23.576 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 24.1926ms
+2026-01-17 21:46:45.417 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:46:45.418 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:46:45.418 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:46:45.418 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:46:45.425 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:46:45.437 -05:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:46:45.439 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:46:45.441 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 22.3945ms
+2026-01-17 21:46:45.441 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:46:45.441 -05:00 [INF] HTTP GET /api/empleado responded 200 in 23.5984 ms
+2026-01-17 21:46:45.442 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 24.835ms
+2026-01-17 21:47:04.683 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:47:04.683 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:47:04.683 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:47:04.683 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:47:04.696 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:47:04.721 -05:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:47:04.721 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:47:04.722 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 38.7319ms
+2026-01-17 21:47:04.722 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:47:04.722 -05:00 [INF] HTTP GET /api/empleado responded 200 in 39.3109 ms
+2026-01-17 21:47:04.723 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 40.2862ms
+2026-01-17 21:47:48.831 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:48538/api/empleado/undefined - null null
+2026-01-17 21:47:48.835 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:47:48.843 -05:00 [INF] HTTP OPTIONS /api/empleado/undefined responded 204 in 8.2684 ms
+2026-01-17 21:47:48.846 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:48538/api/empleado/undefined - 204 null null 13.3988ms
+2026-01-17 21:47:48.852 -05:00 [INF] Request starting HTTP/1.1 PUT http://localhost:48538/api/empleado/undefined - application/json 128
+2026-01-17 21:47:48.855 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:47:48.855 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Update (ExamenSATT)'
+2026-01-17 21:47:48.855 -05:00 [INF] Route matched with {action = "Update", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, ExamenSATT.DTOs.EmpleadoCreateUpdateDTO) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:47:48.935 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-01-17 21:47:48.941 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Update (ExamenSATT) in 85.6789ms
+2026-01-17 21:47:48.942 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Update (ExamenSATT)'
+2026-01-17 21:47:48.942 -05:00 [INF] HTTP PUT /api/empleado/undefined responded 400 in 86.9190 ms
+2026-01-17 21:47:48.944 -05:00 [INF] Request finished HTTP/1.1 PUT http://localhost:48538/api/empleado/undefined - 400 null application/problem+json; charset=utf-8 91.3497ms
+2026-01-17 21:48:49.904 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:48:49.907 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:48:49.907 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:48:49.907 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:48:49.908 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:48:49.921 -05:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:48:49.922 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:48:49.924 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 16.2264ms
+2026-01-17 21:48:49.924 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:48:49.924 -05:00 [INF] HTTP GET /api/empleado responded 200 in 17.3918 ms
+2026-01-17 21:48:49.925 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 21.1548ms
+2026-01-17 21:48:59.630 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:48538/api/empleado/undefined - null null
+2026-01-17 21:48:59.630 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:48:59.633 -05:00 [INF] HTTP OPTIONS /api/empleado/undefined responded 204 in 2.4865 ms
+2026-01-17 21:48:59.634 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:48538/api/empleado/undefined - 204 null null 4.1847ms
+2026-01-17 21:48:59.637 -05:00 [INF] Request starting HTTP/1.1 PUT http://localhost:48538/api/empleado/undefined - application/json 107
+2026-01-17 21:48:59.638 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:48:59.638 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Update (ExamenSATT)'
+2026-01-17 21:48:59.638 -05:00 [INF] Route matched with {action = "Update", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, ExamenSATT.DTOs.EmpleadoCreateUpdateDTO) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:48:59.645 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-01-17 21:48:59.645 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Update (ExamenSATT) in 6.5962ms
+2026-01-17 21:48:59.645 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Update (ExamenSATT)'
+2026-01-17 21:48:59.645 -05:00 [INF] HTTP PUT /api/empleado/undefined responded 400 in 8.2186 ms
+2026-01-17 21:48:59.646 -05:00 [INF] Request finished HTTP/1.1 PUT http://localhost:48538/api/empleado/undefined - 400 null application/problem+json; charset=utf-8 8.9958ms
+2026-01-17 21:49:04.455 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:49:04.455 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:49:04.456 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:49:04.457 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:49:04.458 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:49:04.470 -05:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:49:04.471 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:49:04.474 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 16.783ms
+2026-01-17 21:49:04.474 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:49:04.474 -05:00 [INF] HTTP GET /api/empleado responded 200 in 18.7705 ms
+2026-01-17 21:49:04.474 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 19.5047ms
+2026-01-17 21:51:34.475 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:51:34.476 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:51:34.477 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:51:34.478 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:51:34.482 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:51:34.498 -05:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:51:34.499 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:51:34.500 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 22.0768ms
+2026-01-17 21:51:34.500 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:51:34.501 -05:00 [INF] HTTP GET /api/empleado responded 200 in 24.4936 ms
+2026-01-17 21:51:34.501 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 25.6719ms
+2026-01-17 21:52:01.295 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:52:01.296 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:52:01.297 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:52:01.297 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:52:01.300 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:52:01.337 -05:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:52:01.339 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:52:01.341 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 43.3645ms
+2026-01-17 21:52:01.341 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:52:01.341 -05:00 [INF] HTTP GET /api/empleado responded 200 in 45.4365 ms
+2026-01-17 21:52:01.354 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 46.3763ms
+2026-01-17 21:52:26.529 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:48538/api/empleado/undefined - null null
+2026-01-17 21:52:26.529 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:52:26.530 -05:00 [INF] HTTP OPTIONS /api/empleado/undefined responded 204 in 0.4601 ms
+2026-01-17 21:52:26.530 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:48538/api/empleado/undefined - 204 null null 2.572ms
+2026-01-17 21:52:26.534 -05:00 [INF] Request starting HTTP/1.1 PUT http://localhost:48538/api/empleado/undefined - application/json 132
+2026-01-17 21:52:26.534 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:52:26.535 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Update (ExamenSATT)'
+2026-01-17 21:52:26.535 -05:00 [INF] Route matched with {action = "Update", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, ExamenSATT.DTOs.EmpleadoCreateUpdateDTO) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:52:26.539 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-01-17 21:52:26.543 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Update (ExamenSATT) in 7.5228ms
+2026-01-17 21:52:26.543 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Update (ExamenSATT)'
+2026-01-17 21:52:26.543 -05:00 [INF] HTTP PUT /api/empleado/undefined responded 400 in 8.8889 ms
+2026-01-17 21:52:26.543 -05:00 [INF] Request finished HTTP/1.1 PUT http://localhost:48538/api/empleado/undefined - 400 null application/problem+json; charset=utf-8 9.2939ms
+2026-01-17 21:53:28.447 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:53:28.447 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:53:28.451 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:53:28.451 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:53:28.455 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:53:28.471 -05:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:53:28.473 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:53:28.474 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 22.3802ms
+2026-01-17 21:53:28.474 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:53:28.474 -05:00 [INF] HTTP GET /api/empleado responded 200 in 26.9398 ms
+2026-01-17 21:53:28.476 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 29.4484ms
+2026-01-17 21:53:30.934 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:53:30.934 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:53:30.934 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:53:30.935 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:53:30.936 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:53:30.950 -05:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:53:30.951 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:53:30.952 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 16.7303ms
+2026-01-17 21:53:30.952 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:53:30.952 -05:00 [INF] HTTP GET /api/empleado responded 200 in 17.6664 ms
+2026-01-17 21:53:30.953 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 18.5953ms
+2026-01-17 21:53:35.332 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:53:35.332 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:53:35.332 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:53:35.332 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:53:35.333 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:53:35.352 -05:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:53:35.353 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:53:35.354 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 21.0038ms
+2026-01-17 21:53:35.354 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:53:35.354 -05:00 [INF] HTTP GET /api/empleado responded 200 in 22.0632 ms
+2026-01-17 21:53:35.354 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 22.7907ms
+2026-01-17 21:54:14.515 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:54:14.515 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:54:14.516 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:54:14.517 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:54:14.518 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:54:14.738 -05:00 [INF] Executed DbCommand (218ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:54:14.739 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:54:14.740 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 222.0333ms
+2026-01-17 21:54:14.740 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:54:14.740 -05:00 [INF] HTTP GET /api/empleado responded 200 in 225.0866 ms
+2026-01-17 21:54:14.741 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 226.6546ms
+2026-01-17 21:54:17.599 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:54:17.600 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:54:17.600 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:54:17.600 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:54:17.601 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:54:17.612 -05:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:54:17.614 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:54:17.615 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 14.2209ms
+2026-01-17 21:54:17.615 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:54:17.615 -05:00 [INF] HTTP GET /api/empleado responded 200 in 15.0546 ms
+2026-01-17 21:54:17.615 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 16.7561ms
+2026-01-17 21:54:21.891 -05:00 [INF] Request starting HTTP/1.1 GET http://localhost:48538/api/empleado - null null
+2026-01-17 21:54:21.891 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:54:21.891 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:54:21.891 -05:00 [INF] Route matched with {action = "Get", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ExamenSATT.DTOs.APIResponse`1[System.Collections.Generic.IEnumerable`1[ExamenSATT.DTOs.EmpleadoDTO]]]] Get(System.Threading.CancellationToken) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:54:21.892 -05:00 [INF] Consultando lista completa de empleados
+2026-01-17 21:54:21.904 -05:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC SP_LIST_ALL_EMPL
+2026-01-17 21:54:21.905 -05:00 [INF] Executing OkObjectResult, writing value of type 'ExamenSATT.DTOs.APIResponse`1[[System.Collections.Generic.IEnumerable`1[[ExamenSATT.DTOs.EmpleadoDTO, ExamenSATT, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-17 21:54:21.905 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT) in 13.9165ms
+2026-01-17 21:54:21.906 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Get (ExamenSATT)'
+2026-01-17 21:54:21.906 -05:00 [INF] HTTP GET /api/empleado responded 200 in 14.9692 ms
+2026-01-17 21:54:21.906 -05:00 [INF] Request finished HTTP/1.1 GET http://localhost:48538/api/empleado - 200 null application/json; charset=utf-8 15.5561ms
+2026-01-17 21:54:43.481 -05:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:48538/api/empleado/undefined - null null
+2026-01-17 21:54:43.481 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:54:43.481 -05:00 [INF] HTTP OPTIONS /api/empleado/undefined responded 204 in 0.2347 ms
+2026-01-17 21:54:43.482 -05:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:48538/api/empleado/undefined - 204 null null 1.0622ms
+2026-01-17 21:54:43.486 -05:00 [INF] Request starting HTTP/1.1 PUT http://localhost:48538/api/empleado/undefined - application/json 132
+2026-01-17 21:54:43.487 -05:00 [INF] CORS policy execution successful.
+2026-01-17 21:54:43.487 -05:00 [INF] Executing endpoint 'ExamenSATT.Controllers.EmpleadoController.Update (ExamenSATT)'
+2026-01-17 21:54:43.487 -05:00 [INF] Route matched with {action = "Update", controller = "Empleado"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, ExamenSATT.DTOs.EmpleadoCreateUpdateDTO) on controller ExamenSATT.Controllers.EmpleadoController (ExamenSATT).
+2026-01-17 21:54:43.493 -05:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-01-17 21:54:43.495 -05:00 [INF] Executed action ExamenSATT.Controllers.EmpleadoController.Update (ExamenSATT) in 7.5451ms
+2026-01-17 21:54:43.495 -05:00 [INF] Executed endpoint 'ExamenSATT.Controllers.EmpleadoController.Update (ExamenSATT)'
+2026-01-17 21:54:43.495 -05:00 [INF] HTTP PUT /api/empleado/undefined responded 400 in 8.3312 ms
+2026-01-17 21:54:43.496 -05:00 [INF] Request finished HTTP/1.1 PUT http://localhost:48538/api/empleado/undefined - 400 null application/problem+json; charset=utf-8 9.0245ms
